@@ -23,6 +23,7 @@ fetch(`https://slrmyshop.us/country.php?code=${countryCode}`)
     .catch(error => console.error("Error:", error));
 
 ---
+```php
 2️⃣ Gunakan cURL (PHP)
 
 $code = "MY"; // Contoh kod negara Malaysia
@@ -91,14 +92,19 @@ axios.get(`https://slrmyshop.us/country.php?code=${countryCode}`)
 
 👨‍💻 Developer Info
 
-🔹 GitHub: SLRMYSHOP
-🔹 NPM: @slrmybot/countryapi
-🔹 WhatsApp: +601136871190
-🔹 Instagram: @slrmyshopofficial
+<p align="center">
+  <a href="https://github.com/slrmyshop">
+    <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://www.npmjs.com/package/@slrmybot/countryapi">
+    <img src="https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="NPM">
+  </a>
+  <a href="https://wa.me/601136871190">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
+  </a>
+  <a href="https://instagram.com/slrmyshopofficial">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
 
-
----
 
 💡 Jangan lupa untuk ⭐ repo ini jika anda suka!
-
----
