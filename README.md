@@ -1,9 +1,12 @@
 # 🌍 Country API - SlrmyApi
 
 **Country API** ini membolehkan anda mendapatkan maklumat negara berdasarkan kod negara ISO 3166-1 alpha-2.
+
 ## 📌 Endpoint
+
 https://slrmyshop.us/country.php?code={ISO_CODE}
-## Parameter
+
+## 🔹 Parameter
 | Parameter | Wajib? | Jenis  | Keterangan |
 |-----------|--------|--------|------------|
 | `code`    | ✅     | string | Kod negara (2 huruf, huruf besar) |
@@ -12,9 +15,7 @@ https://slrmyshop.us/country.php?code={ISO_CODE}
 
 ## 📥 Cara Integrasi
 
-```javascript
-1️⃣ Gunakan Fetch API (JavaScript)
-
+### 1️⃣ Gunakan Fetch API (JavaScript)
 const countryCode = "MY"; // Contoh kod negara Malaysia
 
 fetch(`https://slrmyshop.us/country.php?code=${countryCode}`)
@@ -22,8 +23,9 @@ fetch(`https://slrmyshop.us/country.php?code=${countryCode}`)
     .then(data => console.log(data))
     .catch(error => console.error("Error:", error));
 
+
 ---
-```php
+
 2️⃣ Gunakan cURL (PHP)
 
 $code = "MY"; // Contoh kod negara Malaysia
@@ -37,7 +39,10 @@ curl_close($ch);
 
 $data = json_decode($response, true);
 print_r($data);
+
+
 ---
+
 3️⃣ Gunakan Axios (Node.js)
 
 const axios = require("axios");
@@ -46,10 +51,14 @@ const countryCode = "MY"; // Contoh kod negara Malaysia
 axios.get(`https://slrmyshop.us/country.php?code=${countryCode}`)
     .then(response => console.log(response.data))
     .catch(error => console.error("Error:", error));
+
+
 ---
 
 📌 Contoh Output JSON
-# Jika kod negara betul (MY untuk Malaysia) :
+
+✅ Jika kod negara betul (MY untuk Malaysia)
+
 {
   "name": "Malaysia",
   "emoji": "🇲🇾",
@@ -62,7 +71,11 @@ axios.get(`https://slrmyshop.us/country.php?code=${countryCode}`)
   }
 }
 
-# Jika kod negara tidak sah (XX) :
+
+---
+
+❌ Jika kod negara tidak sah (XX)
+
 {
   "name": "Tidak Diketahui",
   "emoji": "❓",
@@ -76,7 +89,10 @@ axios.get(`https://slrmyshop.us/country.php?code=${countryCode}`)
 }
 
 
-# Jika tiada kod diberikan :
+---
+
+❌ Jika tiada kod diberikan
+
 {
   "error": "Sila masukkan kod negara.",
   "devInfo": {
@@ -105,6 +121,11 @@ axios.get(`https://slrmyshop.us/country.php?code=${countryCode}`)
   <a href="https://instagram.com/slrmyshopofficial">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
   </a>
-
+</p>
+---
 
 💡 Jangan lupa untuk ⭐ repo ini jika anda suka!
+
+---
+
+......... 
