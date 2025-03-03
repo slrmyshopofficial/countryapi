@@ -2,12 +2,15 @@
 
 **Country API** membolehkan anda mendapatkan maklumat negara berdasarkan kod negara ISO 3166-1 alpha-2 secara langsung dari API.
 
-## 📦 Pemasangan
+# 📦 Pemasangan
 ---
 npm install @slrmyapi/countryapi
 ---
-📥 Cara Penggunaan
+# 📥 Cara Penggunaan
 
+<div style="background-color: #f4f4f4; border-left: 5px solid #000; padding: 10px; font-family: monospace;">
+
+<pre>
 const getCountryInfo = require("@slrmyapi/countryapi");
 
 getCountryInfo("MY").then(console.log);
@@ -15,14 +18,17 @@ getCountryInfo("MY").then(console.log);
 
 getCountryInfo("XX").then(console.log);
 // Output: { error: 'Gagal mendapatkan data dari API.' }
+</pre>
 
-📌 Senarai Negara Yang Disokong
+</div>
 
-API ini mengambil data secara langsung dari: SLRMY API
+# 📌 Senarai Negara Yang Disokong
 
-👨‍💻 Developer Info
+API ini mengambil data secara langsung dari : SlrmyApi
 
-<p align="center">
+# 👨‍💻 Developer Info
+
+<p align="left">
   <a href="https://github.com/slrmyshopofficial">
     <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
