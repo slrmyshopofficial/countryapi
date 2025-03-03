@@ -1,4 +1,4 @@
-# 🌍 Country API - SLRMYSHOP
+# 🌍 Country API - SlrmyApi
 
 **Country API** ini membolehkan anda mendapatkan maklumat negara berdasarkan kod negara ISO 3166-1 alpha-2.
 ## 📌 Endpoint
@@ -11,15 +11,16 @@ https://slrmyshop.us/country.php?code={ISO_CODE}
 ---
 
 ## 📥 Cara Integrasi
-### 1️⃣ Gunakan Fetch API (JavaScript)
+
 ```javascript
+1️⃣ Gunakan Fetch API (JavaScript)
+
 const countryCode = "MY"; // Contoh kod negara Malaysia
 
 fetch(`https://slrmyshop.us/country.php?code=${countryCode}`)
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error("Error:", error));
-
 
 ---
 2️⃣ Gunakan cURL (PHP)
