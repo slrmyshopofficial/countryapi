@@ -3,11 +3,11 @@
 **Country API** membolehkan anda mendapatkan maklumat negara berdasarkan kod negara ISO 3166-1 alpha-2 secara langsung dari API.
 
 # 📦 Pemasangan
----
+```javascript
 npm install @slrmyapi/countryapi
----
+```
 # 📥 Cara Penggunaan
-
+```javascript
 <div style="background-color: #f4f4f4; border-left: 5px solid #000; padding: 10px; font-family: monospace;">
 
 <pre>
@@ -21,8 +21,8 @@ getCountryInfo("XX").then(console.log);
 </pre>
 
 </div>
-
-# 📌 Senarai Negara Yang Disokong
+```
+# 📌 Negara Yang Disokong
 
 API ini mengambil data secara langsung dari : SlrmyApi
 
