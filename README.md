@@ -3,9 +3,9 @@
 **Country API** membolehkan anda mendapatkan maklumat negara berdasarkan kod negara ISO 3166-1 alpha-2 secara langsung dari API.
 
 ## 📦 Pemasangan
-```sh
+---
 npm install @slrmyapi/countryapi
-
+---
 📥 Cara Penggunaan
 
 const getCountryInfo = require("@slrmyapi/countryapi");
