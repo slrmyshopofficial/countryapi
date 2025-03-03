@@ -8,9 +8,6 @@ npm install @slrmyapi/countryapi
 ```
 # 📥 Cara Penggunaan
 ```javascript
-<div style="background-color: #f4f4f4; border-left: 5px solid #000; padding: 10px; font-family: monospace;">
-
-<pre>
 const getCountryInfo = require("@slrmyapi/countryapi");
 
 getCountryInfo("MY").then(console.log);
@@ -18,9 +15,6 @@ getCountryInfo("MY").then(console.log);
 
 getCountryInfo("XX").then(console.log);
 // Output: { error: 'Gagal mendapatkan data dari API.' }
-</pre>
-
-</div>
 ```
 # 📌 Negara Yang Disokong
 
