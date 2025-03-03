@@ -1,118 +1,32 @@
 # 🌍 Country API - SlrmyApi
 
-**Country API** ini membolehkan anda mendapatkan maklumat negara berdasarkan kod negara ISO 3166-1 alpha-2.
+**Country API** membolehkan anda mendapatkan maklumat negara berdasarkan kod negara ISO 3166-1 alpha-2 secara langsung dari API.
 
-## 📌 Endpoint
+## 📦 Pemasangan
+```sh
+npm install @slrmyapi/countryapi
 
-https://slrmyshop.us/country.php?code={ISO_CODE}
+📥 Cara Penggunaan
 
-## 🔹 Parameter
-| Parameter | Wajib? | Jenis  | Keterangan |
-|-----------|--------|--------|------------|
-| `code`    | ✅     | string | Kod negara (2 huruf, huruf besar) |
+const getCountryInfo = require("@slrmyapi/countryapi");
 
----
+getCountryInfo("MY").then(console.log);
+// Output: { name: 'Malaysia', emoji: '🇲🇾', phoneCode: '+60' }
 
-## 📥 Cara Integrasi
+getCountryInfo("XX").then(console.log);
+// Output: { error: 'Gagal mendapatkan data dari API.' }
 
-### 1️⃣ Gunakan Fetch API (JavaScript)
-const countryCode = "MY"; // Contoh kod negara Malaysia
+📌 Senarai Negara Yang Disokong
 
-fetch(`https://slrmyshop.us/country.php?code=${countryCode}`)
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.error("Error:", error));
-
-
----
-
-2️⃣ Gunakan cURL (PHP)
-
-$code = "MY"; // Contoh kod negara Malaysia
-$url = "https://slrmyshop.us/country.php?code=" . $code;
-
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-$response = curl_exec($ch);
-curl_close($ch);
-
-$data = json_decode($response, true);
-print_r($data);
-
-
----
-
-3️⃣ Gunakan Axios (Node.js)
-
-const axios = require("axios");
-
-const countryCode = "MY"; // Contoh kod negara Malaysia
-axios.get(`https://slrmyshop.us/country.php?code=${countryCode}`)
-    .then(response => console.log(response.data))
-    .catch(error => console.error("Error:", error));
-
-
----
-
-📌 Contoh Output JSON
-
-✅ Jika kod negara betul (MY untuk Malaysia)
-
-{
-  "name": "Malaysia",
-  "emoji": "🇲🇾",
-  "phoneCode": "+60",
-  "devInfo": {
-    "GitHub": "https://github.com/slrmyshop",
-    "NPM": "@slrmybot/countryapi",
-    "WhatsApp": "+601136871190",
-    "Instagram": "@slrmyshopofficial"
-  }
-}
-
-
----
-
-❌ Jika kod negara tidak sah (XX)
-
-{
-  "name": "Tidak Diketahui",
-  "emoji": "❓",
-  "phoneCode": "N/A",
-  "devInfo": {
-    "GitHub": "https://github.com/slrmyshop",
-    "NPM": "@slrmybot/countryapi",
-    "WhatsApp": "+601136871190",
-    "Instagram": "@slrmyshopofficial"
-  }
-}
-
-
----
-
-❌ Jika tiada kod diberikan
-
-{
-  "error": "Sila masukkan kod negara.",
-  "devInfo": {
-    "GitHub": "https://github.com/slrmyshop",
-    "NPM": "@slrmybot/countryapi",
-    "WhatsApp": "+601136871190",
-    "Instagram": "@slrmyshopofficial"
-  }
-}
-
-
----
+API ini mengambil data secara langsung dari: SLRMY API
 
 👨‍💻 Developer Info
 
 <p align="center">
-  <a href="https://github.com/slrmyshop">
+  <a href="https://github.com/slrmyshopofficial">
     <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
-  <a href="https://www.npmjs.com/package/@slrmybot/countryapi">
+  <a href="https://www.npmjs.com/package/@slrmyapi/countryapi">
     <img src="https://img.shields.io/badge/NPM-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="NPM">
   </a>
   <a href="https://wa.me/601136871190">
@@ -122,10 +36,3 @@ axios.get(`https://slrmyshop.us/country.php?code=${countryCode}`)
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
   </a>
 </p>
----
-
-💡 Jangan lupa untuk ⭐ repo ini jika anda suka!
-
----
-
-......... 
